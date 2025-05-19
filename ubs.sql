@@ -16,7 +16,8 @@ CREATE TABLE paciente(
   nascimento date not null,
   tipo_sanguineo varchar(2) not null,
   CONSTRAINT PK_codPaciente PRIMARY KEY(cod_paciente),
-  CONSTRAINT UN_cpf UNIQUE(cpf)
+  CONSTRAINT UN_cpf UNIQUE(cpf),
+  CONSTRAINT UN_cns UNIQUE(cns)
 );
 
 #DML
