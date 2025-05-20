@@ -40,4 +40,4 @@ VALUES(
 
 SELECT * from paciente;
 
-DROP TABLE Paciente;
+
