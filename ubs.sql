@@ -10,8 +10,8 @@ CREATE TABLE paciente(
   cpf bigint(11) not null,
   rg varchar(8) not null,
   cns bigint(15) not null,
-  comorbidade varchar(20) not null, 
-  deficiencia varchar(20) not null,
+  comorbidade varchar(40) not null, 
+  deficiencia varchar(30) not null,
   idade tinyint not null,
   nascimento date not null,
   tipo_sanguineo varchar(2) not null,
@@ -36,3 +36,5 @@ VALUES(
   "O+"  
   
 ); 
+
+SELECT * FROM paciente;
