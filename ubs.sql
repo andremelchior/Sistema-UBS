@@ -35,9 +35,6 @@ VALUES(
   22,
   2003-02-13,
   "O+"  
-  
 ); 
 
 SELECT * from paciente;
-
-
