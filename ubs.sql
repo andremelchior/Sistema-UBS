@@ -16,6 +16,7 @@ CREATE TABLE paciente(
   idade tinyint not null,
   nascimento date not null,
   tipo_sanguineo varchar(2) not null,
+  senha varchar(16) not null,
   CONSTRAINT PK_codPaciente PRIMARY KEY(cod_paciente),
   CONSTRAINT UN_cpf UNIQUE(cpf),
   CONSTRAINT UN_cns UNIQUE(cns) 
@@ -33,7 +34,7 @@ VALUES(
   "Arritmia cardiaca, diabetes.", 
   "Deficiencia Fisica",
   22,
-  2003-02-13,
+  20030213,
   "O+"  
 ); 
 
