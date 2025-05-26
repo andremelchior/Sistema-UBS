@@ -1,4 +1,8 @@
-    <div style="display: flex; width: 70%; margin: auto; justify-content: center; align-items: center;">
+<?php
+  include "header.php";
+?>
+
+<div style="display: flex; width: 70%; margin: auto; justify-content: center; align-items: center;">
 
         <form action="dashboard.php" method="POST" style="margin-top: 200px;">
           <div class="mb-3">
