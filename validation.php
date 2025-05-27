@@ -1,17 +1,16 @@
 <?php
 require_once("connection.php");
 
-$cns = mysqli_real_escape_string($conn, $_POST['cns']);
-$senha = mysqli_real_escape_string($conn, md5($_POST['senha']));
+$cns = $_POST['cns'];
+$senha = $_POST['senha'];
 
-$sql = "SELECT cns, senha FROM paciente where cns = '$cns' and senha = '$senha'";
-$query = mysqli_query($conn, $sql);
+$query = $conn->query("SELECT cns, senha FROM paciente where cns = '$cns' and senha = '$senha'");
 
-
-if ($query) {
-    header("location: dashboard.php");
+if ($query->rowCount() > 0) {
+    header("Location: dashboard.php");
 } else {
-    echo "Login inválido!";
+    echo "<script type="text/javascript">window.alert("Login inválido!");</script>";
+    header("Location: index.php");
 }
 
 ?>
