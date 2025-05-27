@@ -28,14 +28,16 @@ VALUES(
   default, 
   "Beatriz", 
   "Almeida", 
-  35789832145689, 
+  "beatriz@email.com",
+  35789832145689,
   "123456789", 
   56789412358, 
   "Arritmia cardiaca, diabetes.", 
   "Deficiencia Fisica",
   22,
   20030213,
-  "O+"  
-); 
+  "O+",
+  "1234"
+);
 
 SELECT * from paciente;
