@@ -11,7 +11,7 @@ try {
   $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8";
 
   // Cria a Instancia PDO 
-  $pdo = new PDO($dsn,$user,$password);
+  $conn = new PDO($dsn,$user,$password);
   echo "Conexão com o banco de dados foi bem sucedida! <hr>";
   }catch(PDOException $e){
   // Captura Erro de Conexão e encerra o Script com Mensagem
